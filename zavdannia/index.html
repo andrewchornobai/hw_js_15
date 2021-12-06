@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #scroll_down {
+            margin-top: 300px;
+            font-size: 20px;
+        }
+
+        .box_line_and_photo {
+            width: 1200px;
+            height: 1000px;
+            margin-top: 500px;
+            background-color: aquamarine;
+        }
+
+        #red_line {
+            width: 70px;
+            height: 10px;
+            background-color: red;
+        }
+
+        .bix_box {
+            width: 400px;
+            height: 500px;
+            margin: 10px;
+            background-color: aquamarine;
+        }
+
+        #photo {
+            width: 400px;
+            height: 700px;
+            margin-top: 30px;
+            object-fit: cover;
+            object-position: center;
+            background-image: url(img/photo.jpg);
+            background-repeat: no-repeat;
+        }
+
+        #scroll_up {
+            margin: 500px 0 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <p onclick="Down()" id="scroll_down">Scroll down</p>
+    <div class="box_line_and_photo">
+        <div id="red_line">
+        </div>
+        <div id="photo">
+        </div>
+    </div>
+    <p onclick="Up()" id="scroll_up">Scroll up</p>
+    <div></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
